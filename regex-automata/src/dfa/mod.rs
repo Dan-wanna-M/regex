@@ -345,7 +345,7 @@ pub mod sparse;
 #[cfg(feature = "dfa-search")]
 pub(crate) mod accel;
 #[cfg(feature = "dfa-search")]
-mod automaton;
+pub mod automaton;
 #[cfg(feature = "dfa-build")]
 mod determinize;
 #[cfg(feature = "dfa-build")]

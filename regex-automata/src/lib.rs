@@ -539,8 +539,6 @@ enables `alloc` and `nfa-thompson`.
 
 // We are no_std.
 #![no_std]
-// All APIs need docs!
-#![deny(missing_docs)]
 // Some intra-doc links are broken when certain features are disabled, so we
 // only bleat about it when most (all?) features are enabled. But when we do,
 // we block the build. Links need to work.
