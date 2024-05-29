@@ -166,11 +166,12 @@
 #[derive(
     Clone, Copy, Debug, Default, Eq, Hash, PartialEq, PartialOrd, Ord,
 )]
+#[repr(transparent)]
 pub struct LazyStateID(u32);
 
 impl LazyStateID {
-    #[cfg(any(target_pointer_width = "32", target_pointer_width = "64"))]
-    const MAX_BIT: usize = 31;
+    // This is a hack to support my use case in except!. I hope I could remove this in the future.
+    const MAX_BIT: usize = 24;
 
     #[cfg(target_pointer_width = "16")]
     const MAX_BIT: usize = 15;
