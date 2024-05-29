@@ -171,7 +171,7 @@ pub struct LazyStateID(u32);
 
 impl LazyStateID {
     // This is a hack to support my use case in except!. I hope I could remove this in the future.
-    const MAX_BIT: usize = 24;
+    pub const MAX_BIT: usize = 24;
 
     #[cfg(target_pointer_width = "16")]
     const MAX_BIT: usize = 15;
@@ -181,7 +181,7 @@ impl LazyStateID {
     const MASK_QUIT: usize = 1 << (LazyStateID::MAX_BIT - 2);
     const MASK_START: usize = 1 << (LazyStateID::MAX_BIT - 3);
     const MASK_MATCH: usize = 1 << (LazyStateID::MAX_BIT - 4);
-    const MAX: usize = LazyStateID::MASK_MATCH - 1;
+    pub const MAX: usize = LazyStateID::MASK_MATCH - 1;
 
     /// Create a new lazy state ID.
     ///
