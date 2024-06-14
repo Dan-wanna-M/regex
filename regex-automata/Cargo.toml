@@ -1,17 +1,16 @@
 [package]
-name = "regex-automata"
+name = "kbnf-regex-automata"
 version = "0.4.7"  #:version
-authors = ["The Rust Project Developers", "Andrew Gallant <jamslam@gmail.com>"]
-description = "Automata construction and matching using regular expressions."
-documentation = "https://docs.rs/regex-automata"
-repository = "https://github.com/rust-lang/regex/tree/master/regex-automata"
+authors = ["Xintong Sun <xs28@rice.edu>"]
+description = "A forked version of regex-automata for kbnf"
+documentation = "https://docs.rs/kbnf-regex-automata"
+repository = "https://github.com/Dan-wanna-M/regex"
 readme = "README.md"
 keywords = ["regex", "dfa", "automata", "automaton", "nfa"]
 license = "MIT OR Apache-2.0"
 categories = ["text-processing"]
 edition = "2021"
 autoexamples = false
-rust-version = "1.65"
 
 [lib]
 bench = false
