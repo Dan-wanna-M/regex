@@ -1,6 +1,6 @@
 [package]
 name = "kbnf-regex-automata"
-version = "0.4.7"  #:version
+version = "0.4.8"  #:version
 authors = ["Xintong Sun <xs28@rice.edu>"]
 description = "A forked version of regex-automata for kbnf"
 documentation = "https://docs.rs/kbnf-regex-automata"

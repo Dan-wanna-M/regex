@@ -2966,7 +2966,7 @@ impl<T: AsRef<[u32]>> DFA<T> {
     /// This iterator yields a tuple for each state. The first element of the
     /// tuple corresponds to a state's identifier, and the second element
     /// corresponds to the state itself (comprised of its transitions).
-    pub(crate) fn states(&self) -> StateIter<'_, T> {
+    pub fn states(&self) -> StateIter<'_, T> {
         self.tt.states()
     }
 
