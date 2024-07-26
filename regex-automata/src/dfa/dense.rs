@@ -4755,7 +4755,7 @@ impl Flags {
 ///
 /// `'a` corresponding to the lifetime of original DFA, `T` corresponds to
 /// the type of the transition table itself.
-pub(crate) struct StateIter<'a, T> {
+pub struct StateIter<'a, T> {
     tt: &'a TransitionTable<T>,
     it: iter::Enumerate<slice::Chunks<'a, StateID>>,
 }
@@ -4774,7 +4774,7 @@ impl<'a, T: AsRef<[u32]>> Iterator for StateIter<'a, T> {
 /// An immutable representation of a single DFA state.
 ///
 /// `'a` correspondings to the lifetime of a DFA's transition table.
-pub(crate) struct State<'a> {
+pub struct State<'a> {
     id: StateID,
     stride2: usize,
     transitions: &'a [StateID],
